@@ -6,11 +6,10 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-//@Component
+@Component
 @Data
-@ToString
 public class Parrot {
-    private String name;
+    private String name = "Koko";
 
     public Parrot() {
         System.out.println("Parrot created");
