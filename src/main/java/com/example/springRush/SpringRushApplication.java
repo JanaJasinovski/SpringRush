@@ -17,11 +17,14 @@ public class SpringRushApplication {
 		var context =
 				new AnnotationConfigApplicationContext(
 						ProjectConfiguration.class);
-		var comment = new Comment();
-		comment.setAuthor("Laurentiu");
-		comment.setText("Demo comment");
-		var commentService = context.getBean(CommentService.class);
-		commentService.publishComment(comment);
+//		var comment = new Comment();
+//		comment.setAuthor("Laurentiu");
+//		comment.setText("Demo comment");
+//		var commentService = context.getBean(CommentService.class);
+//		commentService.publishComment(comment);
+		System.out.println("Before retrieving the CommentService");
+		var service = context.getBean(CommentService.class);
+		System.out.println("After retrieving the CommentService");
 	}
 
 }

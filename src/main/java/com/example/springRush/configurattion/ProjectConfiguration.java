@@ -29,4 +29,5 @@ public class ProjectConfiguration {
         return new CommentService(commentRepository,
                 commentNotificationProxy);
     }
+
 }
